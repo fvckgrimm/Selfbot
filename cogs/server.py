@@ -24,7 +24,7 @@ class server(commands.Cog):
       await ctx.send('You cannot ban yourslef')
       return
     if reason == None:
-      reason = 'For being stupid'
+      reason = 'being stupid'
     message = f'You have been banned from {ctx.guild.name} for {reason}'
     await member.send(message)
     await ctx.guild.ban(member, reason=reason)
@@ -37,7 +37,7 @@ class server(commands.Cog):
       await ctx.send('You cannot kick yourself')
       return
     if reason == None:
-      reason = 'For being stupid'
+      reason = 'being stupid'
     message = f'You have been kicked from {ctx.guild.name} for {reason}'
     await member.send(message)
     await ctx.guild.kick(member, reason=reason)
