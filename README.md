@@ -10,7 +10,7 @@ Make sure you install and add [python](https://www.python.org/downloads/) to pat
 Clone the repository
 
 ```
-git clone git@github.com:fvckgrimm/Selfbot.git
+git clone https://github.com/fvckgrimm/Selfbot.git
 ```
 
 Use [pip](https://pip.pypa.io/en/stable/) to install requirements.txt
