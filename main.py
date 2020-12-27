@@ -12,7 +12,7 @@ bot_prefix = json.loads(open("config.json").read())['prefix']
 bot = commands.Bot(command_prefix=bot_prefix, self_bot=True)
 
 def show_on():
-  os.system('cls')
+  os.system('clear')
   print(f"""{Fore.CYAN}
 .dP"Y8 88  88 88 888888 888888 Yb  dP     .dP"Y8 888888 88     888888 88""Yb  dP"Yb  888888 
 `Ybo." 88  88 88   88     88    YbdP      `Ybo." 88__   88     88__   88__dP dP   Yb   88   
@@ -51,6 +51,7 @@ async def shutdown(ctx):
     raise KeyboardInterrupt
   except KeyboardInterrupt:
     print('\nGoodbye! (^_^)／')
+    quit()
   
 
 for filename in os.listdir('./cogs'):
