@@ -51,7 +51,6 @@ async def shutdown(ctx):
     raise KeyboardInterrupt
   except KeyboardInterrupt:
     print('\nGoodbye! (^_^)／')
-    quit()
   
 
 for filename in os.listdir('./cogs'):
