@@ -12,7 +12,7 @@ class server(commands.Cog):
     servers = 'currently in ' + str(len(self.bot.guilds)) + ' servers'
     await ctx.message.edit(content=servers)
 
-  @commands.command(aliases=['ns'], brief= 'creates a new server')
+  @commands.command(aliases=['ns'], brief= 'creates new server', description='if server name has spaces in it, put in quotes')
   async def newserv(self, ctx, message=None):
     message = message or 'emote storage'
     await self.bot.create_guild(name=message)
