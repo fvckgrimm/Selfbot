@@ -20,8 +20,8 @@ class utility(commands.Cog):
   async def avatar(self, ctx, user: discord.User = None):
     if not user:
       user = self.bot.user
-      avatar = user.avatar_url_as(static_format='png', size=1024)
-      await ctx.send(avatar)
+    avatar = user.avatar_url_as(static_format='png', size=1024)
+    await ctx.send(avatar)
 
   @commands.command(brief='give x amount of cokies to users in given list')
   async def cookie(self, ctx, amount:int=None):
